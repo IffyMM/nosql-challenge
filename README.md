@@ -1,5 +1,5 @@
 # nosql-challenge
-#Introduction
+# Introduction
 
 A food hygiene rating is assigned to facilities throughout the United Kingdom based on their evaluation by the UK Food Standards Agency. The editors of Eat Safe, Love, a food magazine, have hired you to analyze some of the ratings data so that their journalists and food critics can determine the topics of future stories.
 
@@ -16,7 +16,7 @@ A food hygiene rating is assigned to facilities throughout the United Kingdom ba
 -Assign the establishments collection to a variable to prepare the collection for use.
 
 
-#Updated the Database
+# Updated the Database
 
 An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked you to include it in your analysis. Add the following information to the database:
 {
@@ -57,7 +57,7 @@ An exciting new halal restaurant just opened in Greenwich, but hasn't been rated
 -Use update_many to convert latitude and longitude to decimal numbers.
 -Use update_many to convert RatingValue to integer numbers.
 
-#Analysis
+# Analysis
 
 note: RatingValue refers to the overall rating decided by the Food Authority and ranges from 1-5. The higher the value, the better the rating.
 
@@ -87,10 +87,11 @@ sorted and limited it to 5, and stored data in a dataFrame
 
 Question 4: How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas
 
- Create a pipeline that:
-# 1. Matches establishments with a hygiene score of 0
-# 2. Groups the matches by Local Authority
-# 3. Sorts the matches from highest to lowest
+Create a pipeline that:
+
+ *Matches establishments with a hygiene score of 0
+ *Groups the matches by Local Authority 
+ *Sorts the matches from highest to lowest
 aggregated the pipeline and stored data in a dataframe, 
 Analysis- 
 	_id	count
@@ -100,7 +101,7 @@ Analysis-
 had a the highest ones.
 
 
-#References
+# References
 UK Food Standards AgencyLinks to an external site. (2022). UK food hygiene rating data API. https://ratings.food.gov.uk/open-data/en-GBLinks to an external site.. Contains public sector information licensed under the Open Government Licence v3.0Links to an external site.
 Accessed Sept 9, 2022 and Sept 12, 2022 with the establishment settings as follows: longitude=51.5072, latitude=-0.1276, maxdistancelimit=4567, pagesize=10000, sortoptionkey=distance, pagenumber=(1,2,3,4,5,6,7,8).
 
